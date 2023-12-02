@@ -1,0 +1,139 @@
+/* GLOBAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+/* INDEX PAGE */
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.light {
+  color: black;
+  background-color: white;
+}
+
+.dark {
+  color: white;
+  background-color: black;
+}
+
+.perfil img {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  margin: 8px;
+  transition: 1.5s;
+}
+
+.perfil:hover {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: rotateY(180deg); 
+}
+
+button {
+  font-size: 30px;
+  background-color: black;
+  border: none;
+  cursor: pointer;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  background-color: black;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+header nav ul {
+  display: flex;
+}
+
+header .title {
+  margin-right: 15px;
+  color: yellow;
+  font-size: 28px;
+  font-weight: 900;
+}
+
+header .title span {
+  color: red;
+}
+
+
+header nav ul li a {
+  margin-right: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  min-width: 1080px;
+}
+
+section .card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 280px;
+  height: 400px;
+  margin: 50px 10px 50px 10px;
+  padding: 10px;
+  box-shadow: 4px 4px 2px 1px rgba(0, 0, 0, 0.2);
+  border: solid 1px #d3d3d3;
+  transition: .5s;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+section .card:hover {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 260px;
+  height: 250px;
+  border-radius: 4px;
+}
+
+@media (max-width: 450px) {
+  header .perfil {
+    text-align: center;
+    width: 100%;
+  }
+  
+  header nav ul li a {
+    display: none;
+  }
+
+  section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+
+/* MINHA HISTÓRIA PAGE */
+
+
