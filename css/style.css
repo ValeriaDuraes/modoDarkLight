@@ -6,6 +6,10 @@
   font-family: 'Nunito Sans', sans-serif;
 }
 
+html {
+  font-size: 16px;
+}
+
 /* INDEX PAGE */
 a {
   text-decoration: none;
@@ -36,7 +40,7 @@ ul {
 .perfil:hover {
   -webkit-transform: scale(1.05);
   -ms-transform: scale(1.05);
-  transform: rotateY(180deg); 
+  transform: rotateY(180deg);
 }
 
 button {
@@ -64,7 +68,7 @@ header nav ul {
 header .title {
   margin-right: 15px;
   color: yellow;
-  font-size: 28px;
+  font-size: 1.5rem;
   font-weight: 900;
 }
 
@@ -72,17 +76,29 @@ header .title span {
   color: red;
 }
 
+.title-eu {
+  font-size: 1rem;
+}
+
+.title-eu,
+p {
+  font-size: 0.75rem;
+}
+
+.minhas-historias {
+  font-size: 1rem;
+  margin-top: 2rem;
+}
 
 header nav ul li a {
   margin-right: 15px;
   color: white;
-  font-size: 20px;
+  font-size: 1.5rem;
 }
 
 section {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
   min-width: 1080px;
 }
 
@@ -97,7 +113,7 @@ section .card {
   padding: 10px;
   box-shadow: 4px 4px 2px 1px rgba(0, 0, 0, 0.2);
   border: solid 1px #d3d3d3;
-  transition: .5s;
+  transition: 0.5s;
   border-radius: 8px;
   overflow: hidden;
 }
@@ -114,26 +130,28 @@ section .card:hover {
   border-radius: 4px;
 }
 
-@media (max-width: 450px) {
+footer {
+  text-align: center;
+}
+
+@media (max-width: 480px) {
   header .perfil {
-    text-align: center;
-    width: 100%;
+    display: block;
   }
-  
+
   header nav ul li a {
     display: none;
   }
 
+  .title-eu,
+  p {
+    width: 80%;
+    align-items: center;
+  }
+
   section {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
+    display: block;
+    align-items: center;
+    margin: 0;
   }
 }
-
-
-/* MINHA HISTÓRIA PAGE */
-
-
